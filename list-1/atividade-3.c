@@ -14,7 +14,7 @@ int main(){
     char correto = "a", resposta[2];
 
     printf("Qual é o verdadeiro nome do super-herói Batman? \n ================ \n a) Bruce Wayne \n b) Clark Kent \n c) Peter Parker \n d) Tony Stark \n e) Steve Rogers \n =============== \n Resposta: ");
-    scanf("%s", resposta);
+    scanf("%s", &resposta);
 
     if (resposta == correto){
         printf("Parabéns! Você acertou a questão!");
