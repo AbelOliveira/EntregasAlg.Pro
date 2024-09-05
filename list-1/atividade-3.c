@@ -11,18 +11,23 @@
 
 int main(){
 
-    char correto = "a", resposta[2];
+    char correct = 'a', resposta[2];
 
-    printf("Qual é o verdadeiro nome do super-herói Batman? \n ================ \n a) Bruce Wayne \n b) Clark Kent \n c) Peter Parker \n d) Tony Stark \n e) Steve Rogers \n =============== \n Resposta: ");
+    printf("Qual é o verdadeiro nome do super-herói Batman?");
+    printf("\n===================\n");
+    printf(" a) Bruce Wayne \n b) Clark Kent \n c) Peter Parker  \n d) Tony Stark \n e) Steve Rogers");
+    printf("\n===================\n");
+
+    printf("Resposta: ");
     scanf("%s", &resposta);
 
-    if (resposta == correto){
-        printf("Parabéns! Você acertou a questão!");
-
-    }else{
-        printf("Você respondeu alternativa %s. A resposta correta é a alternativa a.",resposta);
+    if (strcmp(resposta, "a")==0){
+        printf("PARABENS! VOCÊ ACERTOU MUAHAHAH");
 
     }
-
+    else
+    {
+        printf("Infelizmente você errou, a resposta era %s!", correct);
+    }
     return 0;
 }
