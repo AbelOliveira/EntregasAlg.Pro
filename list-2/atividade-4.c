@@ -10,7 +10,7 @@ int main(){
     printf("Digite sua nota do Grau B: ");
     scanf("%f", gb);
 
-    gf = (ga + 2*gb) / 3;
+    gf = (ga + 2*gb) / 3; // <--------- ERRADO PRA KRL, CERTEZA
 
     if (gf>=6)
     {
@@ -20,7 +20,7 @@ int main(){
         printf("Essa não, você não passou. Sua nota ficou em %.2f. Terá que fazer o Grau C!",gf);
     }
     
-    // TERMINAR PQ TA DANDO ERRO
+    // TERMINAR PQ TA DANDO ERRO, NÃO SEI A FÓRMULA DA MÉDIA KKKKKKKKKKKKKKKKKKKKKKK
     
 
     return 0;

@@ -9,7 +9,7 @@ int main(){
     
     t = g - (g*d);
 
-    printf("A loja está em desconto de 15 porcento!! Seu valor total ficou em R$%.2f", t);
+    printf("Como a loja está em promoção de 15%. Seu valor total ficou em R$%.2f", t);
 
     return 0;
 }

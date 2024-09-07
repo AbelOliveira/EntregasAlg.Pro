@@ -11,7 +11,7 @@
 
 int main(){
 
-    char correct = 'a', resposta[2];
+    char correct = 'a', resposta[3];
 
     printf("Qual é o verdadeiro nome do super-herói Batman?");
     printf("\n===================\n");
@@ -19,15 +19,13 @@ int main(){
     printf("\n===================\n");
 
     printf("Resposta: ");
-    scanf("%s", &resposta);
+    scanf("%c", &resposta);
 
     if (strcmp(resposta, "a")==0){
-        printf("PARABENS! VOCÊ ACERTOU MUAHAHAH");
+        printf("PARABENS! VOCÊ ACERTOU!!");
+    }else{
+        printf("Você respondeu a alternativa %c. A resposta correta é a alternativa %s.", resposta, correct); 
+    }
 
-    }
-    else
-    {
-        printf("Infelizmente você errou, a resposta era %s!", correct);
-    }
     return 0;
 }
