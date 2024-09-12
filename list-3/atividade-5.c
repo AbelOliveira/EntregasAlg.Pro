@@ -7,10 +7,10 @@ int main(){
     printf("Digite um número: ");
     scanf("%d", &num);
     
-    if(num%3 == 0){
-        printf("O número %d é divisível por 3!",num);
+    if(num%2 == 0){
+        printf("O número %d é Par!",num);
     }else{
-        printf("O número %d NÃO é divisível por 3!",num);
+        printf("O número %d é Impar!",num);
     }
     
     return 0;
