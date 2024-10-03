@@ -20,7 +20,7 @@ int main(){
         printf("Escolha uma opção: ");
         scanf("%d",&opt);
 
-        if (opt == 1){  //INÍCIO O SISTEMA
+        if (opt == 1){  //INÍCIO O SISTEMA.
 
             printf("========================\n");
 
