@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <stdlib.h>     // executa comandos em shell;
 
 int main(){
     srand(time(NULL));
@@ -13,30 +12,33 @@ int main(){
     while (sistem==1){
 
 //      MENU INICIAL
+        printf("|======================|\n");
+        printf("| 1 - Nova Simulação   |\n");
+        printf("| 2 - Sair do Programa |\n");
+        printf("|======================|\n");
 
-        printf("1 - Nova Simulação\n");
-        printf("2 - Sair do Programa\n");
         printf("Escolha uma opção: ");
         scanf("%d",&opt);
 
-
         if (opt == 1){  //INÍCIO O SISTEMA
 
-            printf("\nPopulação inicial: ");
+            printf("========================\n");
+
+            printf("População inicial: ");
             scanf("%d", &populacao);
 
             printf("Taxa de crescimento: ");
             scanf("%s", &taxacreSTR);
-            sscanf(taxacreSTR,"%.0f%%",&taxacre);
+            sscanf(taxacreSTR,"%f%%",&taxacre);     //pega a string e coloca apenas os números na var "taxacre".
 
-            taxacre = taxacre / 100;
-            printf("%d \n",taxacre);
+            taxacre = taxacre / 100;                //transforma a porcentagem em decimal.
+            printf("%.2f \n",taxacre);
 
             printf("Número de ciclos: ");
             scanf("%d", &numciclo);
-
-            printf("\n");
-            printf("\n");
+            printf("========================\n");
+    
+            printf("\n\n");
             printf("==================================");
 
             for (int i = 1; i <= numciclo; i++){
